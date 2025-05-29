@@ -1,0 +1,49 @@
+﻿body, html {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.main-content {
+    flex: 1;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 15px 0;
+    text-align: center;    
+}
+
+.fixed-footer {
+    margin-top: auto;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 10px 0;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.offcanvas-body .list-group-item {
+    white-space: nowrap; /* Menü öğesi metinlerinin alt satıra geçmesini engelle */
+    overflow: hidden; /* Taşarsa gizle */
+    text-overflow: ellipsis; /* Taşarsa üç nokta ekle */
+    max-width: 100%; /* Kapsayıcısının genişliğini aşmamasını sağla */
+}
